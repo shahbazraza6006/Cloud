@@ -1,0 +1,48 @@
+name: Deploy to AWS Elastic Beanstalk
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Generate deployment package 
+        run: zip -r deploy.zip . -x "*.git*"
+
+      # Add your build and test steps here
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_SECRET_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_ACCESS_SECRET_KEY }}
+          aws-region: us-east-1
+
+      - name: Deploy to AWS Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v19
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_SECRET_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_ACCESS_SECRET_KEY }}
+          region: us-east-1
+          application_name: Cloud_Project
+          environment_name: CloudProject-env 
+          existing_bucket_name: elasticbeanstalk-us-east-1-461130657437
+          use_existing_version_if_available: true
+          version_label: ${{ github.sha }}
+          deployment_package: deploy.zip
+          
