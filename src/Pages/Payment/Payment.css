@@ -1,0 +1,44 @@
+
+
+
+  
+ 
+  .paymentfarm{
+    margin: 30px;
+  }
+ 
+
+  .mydov input,
+  select {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 50%;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: "Source Code Pro", monospace;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  button[type="submit"] {
+   align-items: center;
+   justify-content: center;
+    background-color: #5469d4;
+    border-radius: 0.25em;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 0.75em 1.25em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+  }
+  

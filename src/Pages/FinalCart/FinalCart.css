@@ -1,0 +1,114 @@
+.cartdata{
+    display: flex;
+    margin-top: 40px;
+}
+.carting{
+    display: flex;
+    justify-content: space-between;
+}
+.leftcart{
+    margin-right: 100px;
+    width: 50%;
+}
+.imgcart{
+    height: 80px;
+    width: 100px;
+    border-radius: 50%;
+}
+.cartimg{
+    display: flex;
+    justify-content: space-between;
+}
+.detailcart{
+    margin-left: 20px;
+ 
+    display: flex;
+    
+}
+.mymy{
+    display: flex;
+    flex-direction: column;
+}
+.cartname{
+    margin-left: 20px;
+    
+}
+.cartdescription{
+    margin-left: 60px;
+}
+.cartprice{
+    margin-left: 30px;
+   
+    
+}
+.cartname h3,
+.cartprice h3 {
+    margin-left: 10px;
+  display: flex; 
+}
+.cartimg h3{
+   font-size: 20px;
+}
+.cartimg span{
+    font-weight: bold;
+}
+
+.btnincre{
+    display: flex;
+    margin-left: 10px;
+}
+.btnincre button{
+    margin-left: 2px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+   
+}
+.btnincre button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.btnincre p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.billsdiv p {
+    font-weight: bold;
+}
+.billsdiv button{
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 10%;
+    height: 30px;
+    width: 100px;
+   
+
+}
+.billsdiv button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.btnremove{
+    
+
+}
+.clearbtn button{
+    margin-left: 10px;
+    background-color: #db0b0b;
+    border: 1px solid #000;
+    border-radius: 10%;
+    font-size: 18px;
+    font-weight: 400;
+    height: 30px;
+    width: 100px;
+
+  
+  
+}
+.clearbtn button:hover{
+    background-color: #8f0404;
+    color: #fff;
+}

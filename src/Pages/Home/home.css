@@ -1,0 +1,35 @@
+.imgs{
+    height: 700px;
+    width: 100%;
+}
+.imgs {
+    color:black
+}
+.caraousel{
+   
+}
+.caraousel h3{
+    color: black;
+}
+.slidemain{
+   
+}
+.captions{
+    color: black;
+    margin-bottom: 400px;
+    margin-right: 600px;
+
+}
+.products{
+    margin-top: 25px;
+}
+.cardproducts{
+    margin-top: 40px;
+    margin-left: 130px;
+   
+    
+    grid-template-columns: repeat(3, 1fr);
+}
+.myhomecard{
+    margin-right: 400px;
+}

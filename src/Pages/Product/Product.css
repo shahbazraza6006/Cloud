@@ -1,0 +1,13 @@
+.mainproduct {
+    height: 650px;
+    width: 60%;
+}
+.productos{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.productinfo{
+    margin-top: 100px;
+    margin-right: 480px;
+}

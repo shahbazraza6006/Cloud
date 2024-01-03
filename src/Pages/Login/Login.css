@@ -1,0 +1,22 @@
+.logdiv{
+    min-height: 100vh;
+    background-image: url("../../assets/pic5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+}
+.logincard{
+    margin-top: -20px;
+    margin-left: 20px;
+    
+}
+.mylogin{
+    
+}
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+    
+    
+}
