@@ -41,14 +41,14 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         <Route path="/navbar" element={<Navbar />} />
 
-          <Route element={<ProtectedRoutes />}>
+          
             <Route path="/" element={<Home />} />
             <Route path="/product" element={<Product />} />
             <Route path="/cart" element={<FinalCart />} />
             <Route path="/add" element={<Add />} />
             <Route path="/display" element={<Display />} />
             <Route path="/admin" element={<Admin />} />
-          </Route>
+          
         </Routes>
       </BrowserRouter>
     </div>
