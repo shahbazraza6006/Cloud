@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate, Outlet } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Navigate,
+  Outlet,
+} from "react-router-dom";
 
 import Home from "./Pages/Home/Home";
 import Navbar from "./Components/NavBar/Navbar";
@@ -17,7 +23,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const token = localStorage.getItem("token");
-  
+
   const useAuth = () => {
     return token ? true : false;
   };
@@ -37,18 +43,16 @@ function App() {
     <div className="App">
       <BrowserRouter basename="/">
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-        <Route path="/navbar" element={<Navbar />} />
+          <Route path="/navbar" element={<Navbar />} />
 
-          
-            <Route path="/" element={<Home />} />
-            <Route path="/product" element={<Product />} />
-            <Route path="/cart" element={<FinalCart />} />
-            <Route path="/add" element={<Add />} />
-            <Route path="/display" element={<Display />} />
-            <Route path="/admin" element={<Admin />} />
-          
+          <Route path="/home" element={<Home />} />
+          <Route path="/product" element={<Product />} />
+          <Route path="/cart" element={<FinalCart />} />
+          <Route path="/add" element={<Add />} />
+          <Route path="/display" element={<Display />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </BrowserRouter>
     </div>

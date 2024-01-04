@@ -17,7 +17,7 @@ const initialState = {
         try{
             const response = await axios.post("http://backendcloud-env.eba-igk2dppf.us-east-1.elasticbeanstalk.com/user/register", users);
            alert("User Created Successfully")
-          window.location.href = "/login";
+          window.location.href = "/";
             return response.data;
         }
             catch(error){

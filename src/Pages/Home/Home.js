@@ -106,7 +106,7 @@ const Home = () => {
               return (
                 <Cards
                   key={product._id}
-                  image={`http://localhost:4000/${product.image}`}
+                  image={`http://backendcloud-env.eba-igk2dppf.us-east-1.elasticbeanstalk.com//${product.image}`}
                   name={product.name}
                   description={product.description}
                   quantity={product.quantity}

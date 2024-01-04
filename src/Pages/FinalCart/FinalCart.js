@@ -94,7 +94,7 @@ console.log("mybill",mybill);
 
                           <img
                             className="imgcart"
-                            src={`http://localhost:4000/${item.image}`}
+                            src={`http://backendcloud-env.eba-igk2dppf.us-east-1.elasticbeanstalk.com//${item.image}`}
                             alt="image"
                           />
                           <div className="mymy">
